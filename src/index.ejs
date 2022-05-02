@@ -48,8 +48,8 @@
     {
       "imports": {
         "@insomnia/root-config": "//localhost:9000/insomnia-root-config.js",
-        "@insomnia/kayak-strava-layout": "//localhost:8500/insomnia-kayak-strava-layout.js",
-        "@insomnia/kayak-strava": "//localhost:8501/insomnia-kayak-strava.js"
+        "@insomnia/kayak-strava-navbar": "//localhost:8500/insomnia-kayak-strava-navbar.js",
+        "@insomnia/kayak-strava": "//localhost:8502/insomnia-kayak-strava.js"
       }
     }
   </script>
@@ -69,6 +69,24 @@
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
   <% } %>
+  <template id="single-spa-layout">
+    <single-spa-router>
+      <nav class="topnav">
+        <application name="@insomnia/kayak-strava-navbar"></application>
+      </nav>
+      <!-- <div class="main-content">
+        <route path="settings">
+          <application name="@organization/settings"></application>
+        </route>
+        <route path="clients">
+          <application name="@organization/clients"></application>
+        </route>
+      </div>
+      <footer>
+        <application name="@organization/footer"></application>
+      </footer> -->
+    </single-spa-router>
+  </template>
 </head>
 <body>
   <noscript>
