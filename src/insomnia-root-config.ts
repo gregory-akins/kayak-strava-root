@@ -1,17 +1,19 @@
 import { registerApplication, start } from "single-spa";
+import {
+  constructApplications,
+  constructRoutes,
+  constructLayoutEngine,
+} from "single-spa-layout";
 
-registerApplication({
-  name: "@insomnia/kayak-strava-layout",
-  app: () => System.import("@insomnia/kayak-strava-layout"),
-  activeWhen: ["/"],
+const routes = constructRoutes(document.querySelector("#single-spa-layout"));
+const applications = constructApplications({
+  routes,
+  loadApp({ name }) {
+    return System.import(name);
+  },
 });
 
-registerApplication({
-  name: "@insomnia/kayak-strava",
-  app: () => System.import("@insomnia/kayak-strava"),
-  activeWhen: ["/kayak-strava"],
-});
+const layoutEngine = constructLayoutEngine({ routes, applications });
 
-start({
-  urlRerouteOnly: true,
-});
+applications.forEach(registerApplication);
+start();
