@@ -32,28 +32,30 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
-        "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
-        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.3/lib/system/single-spa.min.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@18.1.0/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@18.1.0/umd/react-dom.production.min.js"
       }
     }
   </script>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.3/lib/system/single-spa.min.js" as="script">
 
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
-  <% if (isLocal) { %>
+  
   <script type="systemjs-importmap">
     {
       "imports": {
+        "@insomnia/kayak-strava-utility": "//localhost:8502/insomnia-kayak-strava-utility.js",
         "@insomnia/root-config": "//localhost:9000/insomnia-root-config.js",
         "@insomnia/kayak-strava-navbar": "//localhost:8500/insomnia-kayak-strava-navbar.js",
-        "@insomnia/kayak-strava": "//localhost:8502/insomnia-kayak-strava.js"
+        "@insomnia/kayak-strava": "//localhost:8501/insomnia-kayak-strava.js"
+        
       }
     }
   </script>
-  <% } %>
+  
 
   <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
@@ -74,15 +76,15 @@
       <nav class="topnav">
         <application name="@insomnia/kayak-strava-navbar"></application>
       </nav>
-      <!-- <div class="main-content">
+      <div class="main-content">
         <route path="settings">
-          <application name="@organization/settings"></application>
+          <application name="@insomnia/kayak-strava"></application>
         </route>
-        <route path="clients">
+        <!-- <route path="clients">
           <application name="@organization/clients"></application>
-        </route>
+        </route> -->
       </div>
-      <footer>
+      <!-- <footer>
         <application name="@organization/footer"></application>
       </footer> -->
     </single-spa-router>
