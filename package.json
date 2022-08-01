@@ -1,5 +1,5 @@
 {
-  "name": "@insomnia/root-config",
+  "name": "@akinsgre/root-config",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js,ts,tsx",
@@ -46,5 +46,5 @@
     "single-spa": "^5.9.3",
     "single-spa-layout": "^2.0.1"
   },
-  "types": "dist/insomnia-root-config.d.ts"
+  "types": "dist/akinsgre-root-config.d.ts"
 }
