@@ -47,11 +47,10 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@insomnia/kayak-strava-utility": "//localhost:8502/insomnia-kayak-strava-utility.js",
-        "@insomnia/root-config": "//localhost:9000/insomnia-root-config.js",
-        "@insomnia/kayak-strava-navbar": "//localhost:8500/insomnia-kayak-strava-navbar.js",
-        "@insomnia/kayak-strava": "//localhost:8501/insomnia-kayak-strava.js"
-        
+        "@akinsgre/kayak-strava-utility": "//localhost:8502/akinsgre-kayak-strava-utility.js",
+        "@akinsgre/root-config": "//localhost:9000/akinsgre-root-config.js",
+        "@akinsgre/kayak-strava": "//localhost:8501/akinsgre-kayak-strava.js",
+        "@akinsgre/kayak-strava-navbar": "//localhost:8500/akinsgre-kayak-strava-navbar.js" 
       }
     }
   </script>
@@ -74,11 +73,11 @@
   <template id="single-spa-layout">
     <single-spa-router>
       <nav class="topnav">
-        <application name="@insomnia/kayak-strava-navbar"></application>
+        <application name="@akinsgre/kayak-strava-navbar"></application>
       </nav>
       <div class="main-content">
-        <route path="settings">
-          <application name="@insomnia/kayak-strava"></application>
+        <route path="/">
+          <application name="@akinsgre/kayak-strava"></application>
         </route>
         <!-- <route path="clients">
           <application name="@organization/clients"></application>
@@ -96,7 +95,7 @@
   </noscript>
   <main></main>
   <script>
-    System.import('@insomnia/root-config');
+    System.import('@akinsgre/root-config');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>

@@ -1,6 +1,6 @@
 {
   "extends": "ts-config-single-spa",
-  "files": ["src/insomnia-root-config.ts"],
+  "files": ["src/akinsgre-root-config.ts"],
   "compilerOptions": {
     "declarationDir": "dist"
   },
