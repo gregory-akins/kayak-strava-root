@@ -1,4 +1,4 @@
- {
+{
   "name": "@akinsgre/root-config",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
@@ -10,6 +10,8 @@
     "prepare": "husky install",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
+    "copyMySpecialFiles": "copyfiles --error --up 1 remote-env/importmap.json dist/importmap",
+    "postbuild": "yarn run copyMySpecialFiles",
     "build:types": "tsc"
   },
   "devDependencies": {
@@ -20,6 +22,7 @@
     "@babel/preset-typescript": "^7.15.0",
     "@babel/runtime": "^7.15.3",
     "concurrently": "^6.2.1",
+    "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
