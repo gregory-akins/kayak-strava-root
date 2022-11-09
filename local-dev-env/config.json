@@ -1,0 +1,6 @@
+{
+  "stravaUrl": "http://localhost:8080/activities.json?access_token=",
+  "clientId": "58115",
+  "clientSecret": "cdee0d256926d9a88f03c1a6fee8d4143536534d",
+  "redirectUrl": "http://localhost:9000"
+}
