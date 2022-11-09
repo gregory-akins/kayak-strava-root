@@ -3,7 +3,6 @@ const singleSpaDefaults = require("webpack-config-single-spa-ts");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
-
 module.exports = (webpackConfigEnv, argv) => {
   const orgName = "akinsgre";
   const defaultConfig = singleSpaDefaults({
