@@ -12,7 +12,7 @@
     "prepare": "husky install",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
-    "copyMySpecialFiles": "copyfiles --error --up 1 remote-env/importmap.json dist/importmap",
+    "copyMySpecialFiles": "copyfiles --error --up 1 remote-env/*.json dist/importmap",
     "postbuild": "yarn run copyMySpecialFiles",
     "build:types": "tsc"
   },
