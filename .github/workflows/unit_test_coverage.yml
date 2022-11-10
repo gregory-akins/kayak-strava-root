@@ -49,6 +49,3 @@ jobs:
 
       - name: Check prettier formatting
         run: npm run check-format
-
-      - name: Build the source code
-        run: npm run build
