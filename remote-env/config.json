@@ -1,3 +1,6 @@
 {
-  "REACT_APP_STRAVA_URL": "https://www.strava.com/api/v3/athlete/activities?access_token="
+  "stravaUrl": "https://www.strava.com/api/v3/athlete/activities?access_token=",
+  "clientId": "58115",
+  "clientSecret": "cdee0d256926d9a88f03c1a6fee8d4143536534d",
+  "redirectUrl": "http://http://akinsgre-root-config.s3-website-us-east-1.amazonaws.com/"
 }
