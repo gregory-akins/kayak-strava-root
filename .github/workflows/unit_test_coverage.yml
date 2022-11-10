@@ -50,8 +50,5 @@ jobs:
       - name: Check prettier formatting
         run: npm run check-format
 
-      - name: Execute test coverage
-        run: npm run coverage
-
       - name: Build the source code
         run: npm run build
