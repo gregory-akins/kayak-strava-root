@@ -19,7 +19,7 @@
     "build:webpack": "webpack --mode=production",
     "copyMySpecialFiles": "copyfiles --error --up 1 remote-env/*.json dist/importmap",
     "postbuild": "npm run copyMySpecialFiles",
-    "build:types": "tsc"
+    "build:types": "tsc --skipLibCheck"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
