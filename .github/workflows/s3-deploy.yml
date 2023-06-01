@@ -1,4 +1,4 @@
-name: Kayak Strava Root S3 Deploy
+name: Akinsgre Root S3 Deploy
 on:
   push:
     branches:
