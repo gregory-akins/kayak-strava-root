@@ -4,6 +4,6 @@
     "@akinsgre/root-config": "http://akinsgre-root-config.s3-website-us-east-1.amazonaws.com/akinsgre-root-config.js",
     "@akinsgre/kayak-strava": "http://akinsgre-kayak-strava.s3-website-us-east-1.amazonaws.com/akinsgre-kayak-strava.js",
     "@akinsgre/kayak-strava-navbar": "http://akinsgre-kayak-strava-navbar.s3-website-us-east-1.amazonaws.com/akinsgre-kayak-strava-navbar.js",
-    "@akinsgre/guide-tips": "http://akinsgre-kayak-strava-navbar.s3-website-us-east-1.amazonaws.com/akinsgre-guide-tips.js"
+    "@akinsgre/guide-tips": "http://akinsgre-guide-tips.s3-website-us-east-1.amazonaws.com/akinsgre-guide-tips.js"
   }
 }
