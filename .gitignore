@@ -71,3 +71,5 @@ dist
 *.sln
 *.sw?
 .DS_Store
+local-dev-env/config.json
+remote-dev-env/config.json
