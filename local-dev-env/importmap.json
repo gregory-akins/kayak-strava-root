@@ -3,6 +3,7 @@
     "@akinsgre/kayak-strava-utility": "//localhost:8502/akinsgre-kayak-strava-utility.js",
     "@akinsgre/root-config": "//localhost:9000/akinsgre-root-config.js",
     "@akinsgre/kayak-strava": "//localhost:8501/akinsgre-kayak-strava.js",
-    "@akinsgre/kayak-strava-navbar": "//localhost:8500/akinsgre-kayak-strava-navbar.js"
+    "@akinsgre/kayak-strava-navbar": "//localhost:8500/akinsgre-kayak-strava-navbar.js",
+    "@akinsgre/guide-tips": "//localhost:8503/akinsgre-guide-tips.js"
   }
 }
