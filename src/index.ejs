@@ -17,8 +17,8 @@
   -->
   <meta http-equiv="Content-Security-Policy" content="
   default-src 'self' https: localhost:*; 
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' http: https: *.s3-website-us-east-1.amazonaws.com:* localhost:*; 
-  connect-src 'self' http: https: *.s3-website-us-east-1.amazonaws.com:* localhost:* ws://localhost:* ; 
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' http: https: *.s3-website-us-east-1.amazonaws.com:* localhost:* *.guide-tips.com:* ; 
+  connect-src 'self' http: https: *.s3-website-us-east-1.amazonaws.com:* *.guide-tips.com:* localhost:* ws://localhost:* ; 
   style-src 'unsafe-inline' https:; 
   object-src 'none';">
   <meta name="importmap-type" content="systemjs-importmap" />
@@ -47,16 +47,8 @@
   </script>
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.3/lib/system/single-spa.min.js" as="script">
 
-  <!-- Add your organization's prod import map URL to this script's src  -->
-  <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
-
   <script type="systemjs-importmap" src="/importmap/importmap.json"></script>
   
-  <!--
-    If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
-    Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
-  -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
 
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
   <% if (isLocal) { %>
